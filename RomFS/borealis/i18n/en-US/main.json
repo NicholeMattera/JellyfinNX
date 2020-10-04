@@ -1,0 +1,9 @@
+{
+    "name": "JellyfinNX",
+    "login": {
+        "server_url": "Server URL",
+        "username": "Username",
+        "password": "Password",
+        "login": "Login"
+    }
+}

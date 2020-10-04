@@ -1,0 +1,3 @@
+[submodule "Libs/borealis"]
+	path = Libs/borealis
+	url = git@github.com:natinusala/borealis.git
