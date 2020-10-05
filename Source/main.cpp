@@ -21,9 +21,10 @@
 #include <stdlib.h>
 #include <string>
 
-#include "Frames/SetupFrame.hpp"
+#include "Frames/Login.hpp"
 
 using namespace brls::i18n::literals;
+using namespace JellyfinNX;
 
 int main(int argc, char* argv[])
 {
@@ -36,8 +37,7 @@ int main(int argc, char* argv[])
         return EXIT_FAILURE;
     }
 
-    // TODO: Check if we already have authentication information.
-    SetupFrame * setupFrame = new SetupFrame();
+    JellyfinNX::Frame::Login * setupFrame = new JellyfinNX::Frame::Login();
     brls::Application::pushView(setupFrame);
     
     while (brls::Application::mainLoop())

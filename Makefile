@@ -11,7 +11,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 
 TARGET		:=	JellyfinNX
 BUILD		:=	Build
-SOURCES		:=	Source Source/Frames
+SOURCES		:=	Source Source/Frames Source/Services
 ROMFS		:=	RomFS
 
 APP_TITLE	:=	JellyfinNX
@@ -34,7 +34,7 @@ CXXFLAGS	:=	$(CFLAGS) -std=c++1z
 ASFLAGS		:=	-g $(ARCH)
 LDFLAGS		=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS		:=	-lnx
+LIBS		:=	-lcurl -lz -lmbedtls -lmbedx509 -lmbedcrypto -ljansson -lnx
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing

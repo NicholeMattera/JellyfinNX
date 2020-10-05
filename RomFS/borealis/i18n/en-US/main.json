@@ -1,9 +1,12 @@
 {
     "name": "JellyfinNX",
     "login": {
-        "server_url": "Server URL",
-        "username": "Username",
+        "connect_to_server": "Connect to Server",
+        "host": "Host",
+        "host_sub": "192.168.1.100:8096 or https://myserver.com",
+        "please_sign_in": "Please sign in",
+        "user": "User",
         "password": "Password",
-        "login": "Login"
+        "sign_in": "Sign In"
     }
 }
